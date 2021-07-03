@@ -1,0 +1,16 @@
+ 
+// ESTRUTURAS CONDICIONAIS 
+
+// Atraves delas conseguimos expressar nosso raciocinio logico e situações de decisão de uma forma estruturada
+
+                // SE  (if) e SENAO (else)
+
+//exemplo:
+
+var notaDoDesafio = 150;
+
+if(notaDoDesafio >= 100){
+    console.log("Aprovado")
+} else{
+    console.log("Ainda não")
+}
