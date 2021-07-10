@@ -1,0 +1,163 @@
+dica de conta porcentagem 
+450*(10/100)
+Devtools = ferramentas de desenvolvedores
+Livro = Estrutura de Dados e Algoritimos com javascript
+
+JavaScript é usado tbm em
+
+apps mobile (react native)
+games
+interfaces gráficas de programas para desktop
+robotica
+internet das coisas e muito mais 
+
+REACT é uma ferramenta pesquisar
+
+RELEMBRANDO:
+
+Variaveis: São usadas para armazenar dados, que podem ser atualizados ou recuperados sempre que necessário.
+
+equima ou es tbm é relacionado ao javaScript tipo um manual de boas praticas ou atualizões 
+
+escopo global e local 
+{
+    var age = 30
+}
+
+as chaves delimitam o escopo o bloco de codigo
+se por exemplo voce utilizar o var voce pode acessar aquela variavel de qualquer lugar do codigo.
+
+Uilizando o let voce pode buscala apenas dentro daquele escopo, daquele conjunto de chaves.
+
+
+FIXANDO
+Var são declarações de escopo global ou escopo de funções.
+
+let e const são de escopo bloqueado
+
+var podem ser atualizadas e atribuidas
+let podem ser atualizadas 
+const não podem ser atualizadas nem reatribuidas
+
+var e let podem ser declaradas sem inicializar (sem o ="informação") consta precisa ser inicializada.
+
+
+javaScript é uma linguagem dinamicamente tipada ou seja o tipo de dado pode ser alterado conforme a necessidade do nosso Algoritimos
+
+null e undefined (vazio e não definido)
+
+objeto uma declaração entre chaves
+
+var person = {
+    "name": Gisele,
+    "age": 30
+}
+
+função nada mais é que um objeto
+
+function sum (a,b){
+    return a +b
+}
+
+(soma é sum em ingles)
+
+para identificar dados typeof
+
+
+>>>Operadores
+// operadores aritmeticos 
+adição +
+var sum = 10+5
+subtração -
+var sub = 25-5
+multiplicação *
+var mult = 5*5
+divisão /
+var div= 10/5
+modulo ou resto %
+10%2
+incremento ++
+var num = 1;
+console.log(++num) <soma mais um >
+decremento --
+console.log(--num) <diminui um>
+
+// operadores de atribuição 
+é quando se usa o operador aritmetico seguido do igual 
+
+>>>  atribuição de soma 
+var x = 1
+var y = 3
+console.log(x+=y) <que é a mesma coisa de fazer x=x+y>
+é a mesma coisa para subtração, divisão, multiplicação e resto.
+
+Operadores de Comparação
+ == comparando valores
+ === compara valores e tipos
+ != diferente de
+ < ou <=
+ > ou >=
+
+ Operadores lógicos
+
+ // e &&
+ ou ||
+ negação !
+
+
+ESTRUTURAS CONDICIONAIS 
+
+if, else e switch
+
+var mes = "janeiro"
+switch(mes){
+    case"fevereiro:
+        console.log("mes 2");
+        break;
+    
+    case "março":
+        console.log(mes 3);
+        break;
+        
+    default:
+        console.log("nenhum dos casos foi atendido");
+}
+
+
+ESTRUTURAS DE REPETIÇÃO FOR > WHILE > DO WHILE
+
+var colors = ["black","white",yellow",green",blue"]
+ 
+ < por convenção utilizamos o contador como i>
+
+ for(var i = 0; i < colors.length;i++){
+     console.log(colors[i]);
+ }
+
+Repetição
+ for(var i = 0;i <10; i ++){
+     console.log(i);
+ }
+
+while < ele vai executar o bloco de codigo enquanto a informação for verdadeira>
+
+var 1 =0;
+
+while(i < 10){
+    console.log(i);
+    i++;
+}
+
+existe tbm o do while a diferença para while é que ele executa antes de verificar a condição 
+
+var i =1;
+
+
+do{
+    console.log(i);
+    i++;
+} while(i < 10);
+
+primeiro ele imprime e depois ele confirma para depois imprimir novamente. 
+ 
+
