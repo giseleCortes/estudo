@@ -160,4 +160,37 @@ do{
 
 primeiro ele imprime e depois ele confirma para depois imprimir novamente. 
  
+FUNÇÕES
 
+as funções executam algo dentro do Algoritimos
+<< por boas praticas o nome da função é um verbo>>
+
+function sayHello(name,lastName){
+
+    console.log("hello "+name "+ lastName)
+}
+sayHello("Gisele","Cortes"); < isso é uma execução de função, sem essa execução ela não funciona )
+
+function sum(a,b{
+    return a+b;
+})
+sum(40,60); <ou>
+console.log(sum(40,60));
+
+Classes
+
+class book {
+    constructor(title, author, pages){
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+    }
+    read(){ < nesse caso pode chamar a funcção sem a palavra reservada function>
+        return'estou lendo $(this.title)'
+    }
+}
+
+let book = new Book ('Algoritimos para viver','brian',500);
+let otherBook = new Book ('Um Exu em Nova York',Cidinha da Silva'100)
+
+console.log(book, otherBook)
