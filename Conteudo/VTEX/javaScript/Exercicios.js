@@ -48,3 +48,6 @@ function convertToFahrenheit (value) {
 
 let result = convertToFahrenheit(40)
 console.log('ovalor em Fahrenheit é ${result}')
+
+// To do List
+
