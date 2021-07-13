@@ -1,0 +1,71 @@
+<p><strong>A - Fornece uma breve descrição </p>
+<p>AA - A + legenda para audio e vídeo</p>
+<p>AAA - A + AA + linguagem de sinais </p></strong>
+
+<h3>ARIA é uma especificação da W3C para aprimorar a acessibilidade (A11Y) que é definida através dos atributos de um
+    elemento HTML</h3>
+
+exemplo
+
+
+<nav role="navigation">
+    <ul role="menu">
+        <li>
+            <a href "" role="menuItem" HOME></a>
+        </li>
+    </ul>
+</nav>
+
+
+<H2>Acessibilidade LANDMARKS</H2>
+<div>
+    <li><strong>role</strong> - definem o que um elemento é ou faz.</li>
+    <li><strong>state </strong>- propriedade especiais que definem condições atuais dos elementos </li>
+    <li><strong>properties </strong>- descreve a relação com outros elementos e emes não mudam uma vez que são definidos
+    </li>
+</div>
+
+<br>
+<br>
+
+<section>
+
+    <div role="tablist">
+        <button role="tab" aria-selected="=" true">Veg</button>
+        <button role="tab" aria-selected="false">Non-Veg</button>
+        <button role="tab" aria-selected="false">Vegan</button>
+    </div>
+
+    <div role="tabpanel" aria-labelledby="...">...</div>
+    <div role="tabpanel" aria-labelledby="...">...</div>
+    <div role="tabpanel" aria-labelledby="...">...</div>
+
+    <h1>LANDMARKS</h1>
+    <p>São pontos de Referencia que ajudam a identificar regiões de alto nivel da página</p>
+    <p>Podem ser definidos atraves de TAGS ou pelo atributo <strong>role</strong>.</p>
+</section>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+
+                <li>
+                    <a href="#">Quem Somos</a>
+                </li>
+
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+
+                <li>
+                    <a href="#">Conteúdo</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+</body>
