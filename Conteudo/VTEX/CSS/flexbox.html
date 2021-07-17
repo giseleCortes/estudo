@@ -1,43 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .flex-div{
-            display:flex;
-            flex-wrap: wrap
+        .flex-div {
+            width: 1000px;
+            height: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-around;
+            flex-direction: column;
+
 
         }
-        .child-div{
-            border:1px solid black;
+
+        .child-div1 {
+            border: 1px solid black;
             width: 20px;
+            height: 20px;
+            flex-basis: 100px;
+
+
         }
 
+        .child-div2 {
+            border: 1px dashed rgb(153, 153, 153);
+            width: 20px;
+            flex-basis: 100px;
+
+        }
+
+        .child-div3 {
+            border: 1px solid rgb(129, 197, 20);
+            flex-basis: 100px;
+        }
+
+        .child-div3::first-letter {
+            font-size: 30px;
+            color: rebeccapurple;
+        }
+
+        .child-div4 {
+            height: 15px;
+            background-color: #6e5f6c;
+        }
+        @media(max-width:600px){
+            .child-div4{
+                background-color: salmon;
+            }
+        }
+        #child-input {
+            background-color: dodgerblue;
+        }
+
+        #child-input:hover {
+            background-color: black;
+
+        }
+
+        span[euDouONome] {
+            color: red;
+        }
+
+        
+        
     </style>
 </head>
+
 <body>
-    <p>Flex box funciona em doi eixos. O eixo padrao da esquerda para direita.</p>
-    <p>E o eixo cruzado de cima para baixo</p> 
-    chama-se o flex na div principal. <br>
-    Para quebra de linha depois que o eixo principal for totalmente ocupado. utilizamos o FLEX WRAP que vem nativamente desativado( no wrap).
+    <p>Flex box funciona em dois eixos. O eixo padrao da esquerda para direita. E o eixo cruzado de cima para baixo.<br>
+        Chama-se o flex na div principal. <br>
+    <h3>flex-wrap</h3>
+    Para quebra de linha depois que o eixo principal for totalmente ocupado. utilizamos o FLEX WRAP que vem nativamente
+    desativado( no wrap).
     para ativar: flex-wrap: wrap;<br>
-    Para alinhamento utilizamos as propriedades flex-direction, que altera o modo de alinhamento. o row-reverse por exemplo altera a o alinhamento do eixo principal da direita para esquerda.<br>
-    Para inverter o eixo principal com o eixo cruzado utilizamos a propriedade column (flex-direction: column;)
+    <h3>align and justify</h3>
+    Para alinhamento utilizamos as propriedades flex-direction, que altera o modo de alinhamento. o row-reverse por
+    exemplo altera a o alinhamento do eixo principal da direita para esquerda.<br>
+    Para inverter o eixo principal com o eixo cruzado utilizamos a propriedade column (flex-direction: column;)<br>
+    A propriedade align itens alinha os elementos no eixo cruzado, de cima para baixo. a configuração padrao dessa
+    propriedade é a baseline.
+    align-items: baseline; podemos alinhar pelo centro utilizando a proriendade center. A propriedade flex-end alinha no
+    final da div. <br>
+    Para alinharmos no eixo princioal, da esquerda para direita. utilizamos justify-content. Para adionar um espaço
+    exatamente igual entre cada elemento da div utilizamos: justify-contente: space-between; nesse caso não há
+    distanciamento entre o elemento e a margin.<br>
+    O space-around coloca um espaço entre os elementos e o adiocna um espaço entre as margins.
+    <h3>flexGrow flexShrink flexBasis</h3>
+    >flex-basis define a largura da div<br>
+    >flex-grow é o fator de crescimento da minha div
+    <h3> Seletores </h3>
+    Pode ser por classe.(class). O "." é utilizado antes de se chamr uma classe.
+    O Id é utilizado para referenciar algo dentro do css. Utilizado dentro dos elementos.
+    para chama-lo utilizamos "#"
+    <h3> hover </h3>
+    muda a cor quando passa o mouse
+    <h3>pseudo elementos</h3>
+    vamos supor que vc querira que apenas a primeira letra ddo texto na div seja de uma cor diferente e tamanho diferente. 
+    .child-div3::firstletter{}
+    <h3>Média Queries</h3>
+    Ajuda a definir diferentes tipos de configurações para diferentes tamanhos de devices.<br>
+    A medida que o tamanho for diminuindo no exemplo o background-color ira mudar de cor
     
+
+    
+
+
     <div class='flex-div'>
-        <div class='child-div'>
+        <div class='child-div1'>
             1
+
         </div>
-        <div class="child-div">
+
+        <input id="child-input">
+
+        <div class="child-div2">
             2
         </div>
-        <div class="child-div">
-            3
+
+        <span euDouONome> Span referencia um texto!</span>
+
+        <div class="child-div3">
+            BATMAN
+        </div>
+        <div class="child-div4">
+            Tá ficando apertado
         </div>
     </div>
 
 </body>
+
 </html>
