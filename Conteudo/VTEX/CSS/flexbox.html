@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-div{
+            display:flex;
+            flex-wrap: wrap
+
+        }
+        .child-div{
+            border:1px solid black;
+            width: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Flex box funciona em doi eixos. O eixo padrao da esquerda para direita.</p>
+    <p>E o eixo cruzado de cima para baixo</p> 
+    chama-se o flex na div principal. <br>
+    Para quebra de linha depois que o eixo principal for totalmente ocupado. utilizamos o FLEX WRAP que vem nativamente desativado( no wrap).
+    para ativar: flex-wrap: wrap;<br>
+    Para alinhamento utilizamos as propriedades flex-direction, que altera o modo de alinhamento. o row-reverse por exemplo altera a o alinhamento do eixo principal da direita para esquerda.<br>
+    Para inverter o eixo principal com o eixo cruzado utilizamos a propriedade column (flex-direction: column;)
+    
+    <div class='flex-div'>
+        <div class='child-div'>
+            1
+        </div>
+        <div class="child-div">
+            2
+        </div>
+        <div class="child-div">
+            3
+        </div>
+    </div>
+
+</body>
+</html>
