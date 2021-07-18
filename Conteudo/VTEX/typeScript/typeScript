@@ -1,0 +1,13 @@
+O typeScript é um superset do javaScript
+
+ele pega o js e aciona coisas. ele vai alem do javascript. ele da superpoderes ao javascript.
+ele adiciona:
+Tipagem Estática
+Interfaces
+enums
+Decorators
+Generics
+e varias outras coisas.
+
+O browser não le TS é necessário "converte-lo " para JS. O TS é utilizado apenas em desenvolvimento.
+
