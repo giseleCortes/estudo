@@ -1,0 +1,47 @@
+.card-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+
+}
+.card{
+    display:flex;
+    margin: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.description{
+    text-align: center;
+    margin: 5px 2px;
+    font-size: 10px;
+}
+.product-name{
+    
+    font-weight: 900;
+}
+.price{
+    font-weight: 600;
+}
+.buy-button{
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+.buy-button:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+div{
+    border:1px solid black;
+    width:200px;
+}
+
+img{
+    width: 100px;
+}
