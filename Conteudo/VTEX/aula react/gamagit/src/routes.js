@@ -1,14 +1,14 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter} from 'react-router-dom';
-import repositores from './repositores';
-import Home from './home';
+import repositories from './repositories';
+import Home from './Pages/Home';
 
 export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
                 <Route path='/' exact component= {Home} />
-                <Route path='/repositories' component={repositores} />
+                <Route path='/repositories' component={repositories} />
             </Switch>
         </BrowserRouter>
     )
